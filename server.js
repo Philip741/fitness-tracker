@@ -7,8 +7,8 @@ const routes = require('./routes');
 const app = express();
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
-  useNewUrlParser: true,
-  useFindAndModify: false
+  useNewUrlParser: true
+  //useFindAndModify: false
 });
 
 app.use(express.json());

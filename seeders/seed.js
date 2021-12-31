@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-const db = require('../models/fitness');
+const db = require('../models');
 
-mongoose.connect('mongodb://localhost:27017/fitness', {
+mongoose.connect('mongodb://localhost:27017/workout', {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true,
@@ -132,7 +132,7 @@ console.log(db.exerciseData)
 
 async function createNew() {
   try {
-      const insertResult = await db.exerciseData.collection.insertMany(workoutSeed);
+      const insertResult = await db.Workout.collection.insertMany(workoutSeed);
       console.log(insertResult.result.n + ' records inserted!');
       process.exit(0);
   }catch(err) {
@@ -140,14 +140,14 @@ async function createNew() {
     process.exit(1);
   }
 }
-createNew();
-// db.exerciseData.deleteMany({})
-//   .then(() => db.exerciseData.collection.insertMany(workoutSeed))
-//   .then((data) => {
-//     console.log(data.result.n + ' records inserted!');
-//     process.exit(0);
-//   })
-//   .catch((err) => {
-//     console.error(err);
-//     process.exit(1);
-//   }); 
+//createNew();
+db.Workout.deleteMany({})
+  .then(() => db.Workout.collection.insertMany(workoutSeed))
+  .then((data) => {
+    console.log(data.result.n + ' records inserted!');
+    process.exit(0);
+  })
+  .catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });

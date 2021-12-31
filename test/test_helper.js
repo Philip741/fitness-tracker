@@ -7,9 +7,9 @@ mongoose.connection
         console.warn('Error : ',error);
     });
 //Called hooks which runs before something.
- beforeEach((done) => {
-     mongoose.connection.collections.fitnesses.drop(() => {
-          //this function runs after the drop is completed
-        done(); //go ahead everything is done now.
-     }); 
- });
+//  beforeEach((done) => {
+//      mongoose.connection.collections.fitnesses.drop(() => {
+//           //this function runs after the drop is completed
+//         done(); //go ahead everything is done now.
+//      }); 
+//  });

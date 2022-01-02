@@ -3,9 +3,11 @@
    ## Table of contents     
    [description](#description)
 
-[instructions](#instructions)
+[Deployed url](#Deployed-url)
 
 [usage](#usage)
+
+[Screenshots](#Screenshots)
 
 [contribution](#contribution)
 
@@ -19,13 +21,15 @@
 
    ## Description
    Application that tracks workouts   
-   ## Instructions
+   ## Deployed-url
     
    ## Usage
 
    * Click on new workout. 
    * Input the exercise parameters. 
    * Choose complete to complete that days workout or add additional exercises 
+
+   ## Screenshots
 
    ## Contribution
    

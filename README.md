@@ -21,7 +21,9 @@
 
    ## Description
    Application that tracks workouts   
+
    ## Deployed-url
+   
    [Deployed application](https://pbrownin-fitness-tracker.herokuapp.com/) on Heroku
     
    ## Usage
@@ -29,6 +31,10 @@
    * Click on new workout. 
    * Input the exercise parameters. 
    * Choose complete to complete that days workout or add additional exercises 
+
+   ## Screenshots
+
+   <img src="./images/finished_workout.png" alt="finished workout picture" width="200"/>
 
    ## Contribution
    
